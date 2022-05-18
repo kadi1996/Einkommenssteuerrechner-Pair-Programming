@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  background-color: #293133;
+  color: #fff;
+}
+
+main {
+  margin: 15vh auto;
+  width: 380px;
+  height: 380px;
+  border: 2px dotted #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline red;
+  padding: 0 0 15px 0;
+}
+
+#zve {
+  display: block;
+  text-align: center;
+  margin: 5px auto;
+  padding: 3px 0;
+}
+
+#marriage {
+  text-decoration: 2px underline dotted red;
+}
+
+#divbox {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 33%;
+}
+
+#kst {
+  display: block;
+  padding: 5px 0;
+  text-decoration: 2px underline dotted red;
+}
+
+#kirchensteuer {
+  display: block;
+  margin: 0 auto;
+  padding: 3px 7px;
+}
+
+#calculate {
+  margin: 15px 0;
+  padding: 5px 10px;
+}
+
+.outputvalues {
+  margin: 5px 10px 10px 10px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+#outputNet {
+  text-decoration: underline double white;
+}

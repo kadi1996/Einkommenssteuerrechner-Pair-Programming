@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESt-Rechner</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Einkommenssteuer-Rechner</h1>
+      <form action="" onsubmit="return false">
+        <div>
+          <label for="steuerjahr">Steuerjahr :</label>
+    <select name="steuerjahr" id="steuerjahr">
+    <option value="2021" id="2021">2021</option>
+    <option value="2020" id="2020">2020</option>
+    <option value="2019" id="2019">2019</option>
+        </div>
+        <div>
+          <label for="zve">Zu versteuerndes Einkommen :</label>
+          <input type="text" name="zve" id="zve" placeholder="Jahresbrutto in €">
+        </div>
+        <label id="marriage" for="">Ehegattensplitting:</label>
+        <div id="divbox">
+          <div>
+            <input type="radio" id="married" name="splitting" value="0" checked>
+            <label for="married">JA</label>
+          </div>
+          <div>
+            <input type="radio" id="notmarried" name="splitting" value="1">
+          <label for="css">NEIN</label>
+          </div>
+        </div>
+        <div>
+          <label id="kst" for="kirchensteuer">Kirchensteuer :</label>
+          <div>
+            <select name="kirchensteuer" id="kirchensteuer">
+              <option value="0">NEIN</option>
+              <option value="8">8%</option>
+              <option value="9">9%</option>
+          </div>         
+              <div>
+                <input type="button" value="Berechne" id="calculate" onclick="berechne()">
+              </div>       
+        </div>
+        <div class="outputvalues">
+          <p>Zuversteuerndes Einkommen:</p>
+          <p id="outputZve"></p>
+        </div>
+        <div class="outputvalues">
+          <p>Einkommenssteuer:</p>
+          <p id="outputEst"></p>
+        </div>
+        <div class="outputvalues">
+          <p>Kirchensteuer:</p>
+          <p id="outputKst"></p>
+        </div>
+        <div class="outputvalues">
+          <p>Jahres Nettoverdienst:</p>
+          <p id="outputNet"></p>
+        </div>
+      </form>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
